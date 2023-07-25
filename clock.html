@@ -6,15 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-
         *{ margin: 0;
            padding: 0;
            font-size: 45px;
            color: #ffff;         
-           font-family:monospace;
-           
+           font-family:monospace;           
          }
-
         div{
             height:100vh; 
             display: flex; 
@@ -23,21 +20,18 @@
             align-items: center; 
             background-image: radial-gradient(#076d86, #070311f8);
             }
-
         p{ 
             height: 100px; 
             width: 500px;            
             background-image: linear-gradient(#16bffd, #7e388b);
              color:white;
              line-height: 100px;
-             text-align:center;             
-                         
+             text-align:center;                          
              box-shadow: 1px 1px 0px #7e388b, 2px 2px 0px #7e388b, 3px 3px 0px #7e388b,
              4px 4px 0px #7e388b,
              5px 5px 0px #7e388b,
-             6px 6px 0px #7e388b;
-             
-            }     
+             6px 6px 0px #7e388b;             
+            } 
        
     </style>
 </head>
@@ -46,9 +40,8 @@
         <h1>COUNTDOWN BEGINS</h1>
         <p id="CountdownClock"></p>
     </div>
-
     <script>
-        var dest = new Date("july 24, 2023 12:00:00").getTime();
+        var dest = new Date("july 24, 2024 12:00:00").getTime();
         var now = new Date().getTime();
         var diff = dest - now ;
         var days = Math.floor(diff/ (1000*60*60*24));
@@ -60,9 +53,7 @@
         var seconds = Math.floor((diff % (1000*60)) / (1000));
         console.log(seconds);
         document.getElementById("CountdownClock").innerHTML = 
-        days + "d:" + hours + "hrs:" + minutes + "m:"  + seconds + "s", (1000);       
-        
-    </script> 
-    
+        days + "d:" + hours + "hrs:" + minutes + "m:"  + seconds + "s", (1000);        
+    </script>     
 </body>
 </html>
